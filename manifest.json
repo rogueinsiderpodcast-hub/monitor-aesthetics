@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "fichte.screenfx",
+  "name": "Screen FX",
+  "version": "1.0.0",
+  "author": "fichte",
+  "license": "MIT",
+  "description": "Retro post-processing filters for the whole screen: film grain, chromatic aberration, RGB keyspill, scanlines, vignette, flicker, and color grades.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Screen FX",
+    "description": "Popup lab for whole-screen retro filters via Hyprland's screen shader",
+    "category": "Display",
+    "aliases": ["screenfx", "screen-fx", "fx"],
+    "allowMultiple": false
+  }
+}
