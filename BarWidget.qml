@@ -54,7 +54,7 @@ BarWidget {
   }
 
   // Headless control surface: every panel action is reachable over the
-  // omarchy-shell IPC channel (omarchy-shell fichte.screenfx <verb>). ShellIpc
+  // omarchy-shell IPC channel (omarchy-shell fichte.screenfx <verb>). IpcHandler
   // forwards CLI args as strings, so every parameter is typed `string` and
   // coerced here.
   function applyPreset(id) {
@@ -97,7 +97,7 @@ BarWidget {
     }
   }
 
-  ShellIpc {
+  IpcHandler {
     target: "fichte.screenfx"
 
     function open(): void { root.open() }
@@ -120,8 +120,6 @@ BarWidget {
     text: "\uEF15"
     fontFamily: root.bar ? root.bar.fontFamily : Style.font.family
     fontSize: Style.font.icon
-    // A glyph, so monospace figure metrics say nothing about the em.
-    centerFigures: false
     foreground: root.fxActive
       ? Commons.Color.accent
       : (root.bar ? root.bar.barForeground : Commons.Color.foreground)
