@@ -5,6 +5,8 @@ onto the GPU through Hyprland's screen shader slot. Film grain, chromatic
 aberration, RGB keyspill, scanlines, vignette and CRT flicker — plus a set of
 one-click presets and color grades.
 
+![The Screen FX lab open over a live filter stack](preview.png)
+
 Inside the bar is a small wand-sparkle button that opens the Screen FX lab:
 toggle individual effects, drag their parameters, and pick a preset.
 
